@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Home = () => (
   <div className="bg-white min-h-screen flex flex-col">
@@ -13,9 +15,11 @@ const Home = () => (
         <h2 className="text-lg font-bold">MyPropose.ai</h2>
       </div>
       <div className="flex gap-2">
+        <Link to="/dashboard">
         <button className="bg-gray-100 text-gray-900 font-bold px-4 py-2 rounded-xl hover:bg-gray-200">
-          Help
+          Dashboard
         </button>
+        </Link>
         <button className="bg-gray-100 text-gray-900 font-bold px-4 py-2 rounded-xl hover:bg-gray-200 flex items-center gap-2">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
             <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48Z"></path>
@@ -43,12 +47,14 @@ const Home = () => (
             signing up or logging in.
           </p>
           <div className="flex gap-3">
+          <Link to="/signup-page">
             <button className="bg-blue-500 text-white font-bold py-2 px-6 rounded-xl hover:bg-blue-600 transition">
               Sign Up
             </button>
-            <button className="bg-gray-100 text-gray-900 font-bold py-2 px-6 rounded-xl hover:bg-gray-200 transition">
-              Log In
-            </button>
+            </Link>
+            <Link to="/login-page">
+              <button className="bg-gray-100 text-gray-900 font-bold py-2 px-6 rounded-xl hover:bg-gray-200 transition">Log In</button>
+            </Link>
           </div>
         </div>
       </section>

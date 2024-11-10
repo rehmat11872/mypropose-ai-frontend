@@ -8,6 +8,9 @@ import ProposalGenerator from "../pages/ProposalGenerator";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
 import ProfileSettings from "../pages/ProfileSettings";
+import ClientAnalysis from "../pages/ClientAnalysis";
+import LoginPage from "../pages/LoginPage";
+import SignupPage from "../pages/SignupPage";
 
 const AppRoutes = () => (
     <Routes>
@@ -19,6 +22,12 @@ const AppRoutes = () => (
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/profile-settings" element={<ProfileSettings />} />
+        <Route path="/client-anaylsis" element={<ClientAnalysis />} />
+        <Route path="/login-page" element={<LoginPage />} />
+        <Route path="/signup-page" element={<SignupPage />} />
+
+
+        
     </Routes>
 );
 

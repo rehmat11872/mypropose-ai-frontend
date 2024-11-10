@@ -23,7 +23,8 @@ const AppContent = () => {
       <main className="flex-grow">
         <AppRoutes />
       </main>
-      {!isHomePage && <Footer />} {/* Only render Footer if not on home page */}
+      {/* {!isHomePage && <Footer />}  */}
+      {/* Only render Footer if not on home page */}
     </div>
   );
 };
