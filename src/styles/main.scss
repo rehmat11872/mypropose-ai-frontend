@@ -1,0 +1,16 @@
+// src/styles/main.scss
+
+// Variables for color palette
+$primary-color: #007bff;
+$neutral-gray: #f0f0f0;
+
+// Global styling
+body {
+    font-family: Arial, sans-serif;
+    background-color: $neutral-gray;
+    color: #333;
+}
+
+h1, h2 {
+    color: $primary-color;
+}
