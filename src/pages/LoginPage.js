@@ -70,7 +70,7 @@ const Login = () => {
       </div>
 
       {/* LEFT COLUMN (LOGIN FORM) */}
-      <div className="w-full md:w-1/2 bg-white flex items-center justify-center p-8">
+      <div className="w-full md:w-1/2 bg-white flex items-center justify-center p-8 mt-12">
         <div className="max-w-sm w-full">
           {/* Heading */}
           <h2 className="text-center text-2xl font-bold text-gray-900 mb-6">
@@ -121,6 +121,17 @@ const Login = () => {
             />
             {errorPassword && <p className="text-red-500 text-xs mt-1">{errorPassword}</p>}
 
+
+            {/* Forgot Password Link */}
+            <div className="flex justify-end mt-2">
+              <Link
+                to="/forgot-password"
+                className="text-sm text-[#13544e] hover:underline"
+              >
+                Forgot your password?
+              </Link>
+            </div>
+
             {/* Login Button */}
             <button
               onClick={handleLogin}
@@ -142,27 +153,27 @@ const Login = () => {
       </div>
 
       {/* RIGHT COLUMN (Animated Text) */}
-      <div className="w-full md:w-1/2 bg-[#13544e] text-white flex items-center justify-center p-8">
-        <div className="max-w-md">
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">
-            <Typewriter
-              words={[
-                'Intelligent Proposal Generator',
-                'Generate your AI proposal',
-                'Boost your productivity',
-                'Client History Analysis',
-                'Dynamic Content Customization'
-              ]}
-              loop
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-          </h1>
-        </div>
+      <div className="hidden md:flex w-full md:w-1/2 bg-[#13544e] text-white items-center justify-center p-8">
+      <div className="max-w-md">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4">
+          <Typewriter
+            words={[
+              'Intelligent Proposal Generator',
+              'Generate your AI proposal',
+              'Boost your productivity',
+              'Client History Analysis',
+              'Dynamic Content Customization'
+            ]}
+            loop
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h1>
       </div>
+    </div>
 
       {/* Toast Container for Notifications */}
       <ToastContainer position="top-right" autoClose={3000} />
