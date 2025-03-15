@@ -11,8 +11,13 @@ import ProfileSettings from "../pages/ProfileSettings";
 import ClientAnalysis from "../pages/ClientAnalysis";
 import LoginPage from "../pages/LoginPage";
 import SignupPage from "../pages/SignupPage";
+import MagicLinkForm from "../pages/MagicLinkForm";
+import VerifyCode from "../pages/VerifyCode";
+import ScrollToTop from "../common/ScrollToTop";
 
 const AppRoutes = () => (
+    <>
+    <ScrollToTop />
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -23,12 +28,12 @@ const AppRoutes = () => (
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/profile-settings" element={<ProfileSettings />} />
         <Route path="/client-anaylsis" element={<ClientAnalysis />} />
-        <Route path="/login-page" element={<LoginPage />} />
-        <Route path="/signup-page" element={<SignupPage />} />
-
-
-        
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/magic-link" element={<MagicLinkForm />} />
+        <Route path="/verify-code" element={<VerifyCode />} />
     </Routes>
+    </>
 );
 
 export default AppRoutes;

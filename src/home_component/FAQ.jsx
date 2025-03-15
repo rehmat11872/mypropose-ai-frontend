@@ -1,26 +1,83 @@
 import React, { useState } from 'react';
 
 // FAQ data with logo/icon
+// const faqs = [
+//   {
+//     question: 'What is a Payment Gateway?',
+//     answer: 'A payment gateway is a service that authorizes credit card or direct payments.',
+//     icon: '💳', // Example icon or image
+//   },
+//   {
+//     question: 'What makes MyPropose.ai different?',
+//     answer: 'MyPropose.ai leverages advanced AI to simplify proposal writing.',
+//     icon: '🤖', // Example icon or image
+//   },
+//   {
+//     question: 'How does it integrate with Upwork?',
+//     answer: 'It seamlessly integrates with Upwork to help you create proposals faster.',
+//     icon: '🔗', // Example icon or image
+//   },
+//   {
+//     question: 'What does the free trial include?',
+//     answer: 'The free trial includes access to basic templates and tools for 14 days.',
+//     icon: '🎁', // Example icon or image
+//   },
+// ];
+
 const faqs = [
   {
-    question: 'What is a Payment Gateway?',
-    answer: 'A payment gateway is a service that authorizes credit card or direct payments.',
-    icon: '💳', // Example icon or image
+    question: 'What is MyPropose.ai?',
+    answer:
+      'MyPropose.ai is an AI-driven proposal generator that leverages your professional details, skills, project history, and client feedback to create tailored proposals for Upwork.',
+    icon: '🤖',
   },
   {
-    question: 'What makes MyPropose.ai different?',
-    answer: 'MyPropose.ai leverages advanced AI to simplify proposal writing.',
-    icon: '🤖', // Example icon or image
+    question: 'How does MyPropose.ai generate proposals?',
+    answer:
+      'It uses advanced AI algorithms to analyze your profile and past projects, crafting personalized proposals that enhance your chances of success on Upwork.',
+    icon: '💡',
   },
   {
     question: 'How does it integrate with Upwork?',
-    answer: 'It seamlessly integrates with Upwork to help you create proposals faster.',
-    icon: '🔗', // Example icon or image
+    answer:
+      'Our platform seamlessly connects with Upwork, enabling you to manage and send your generated proposals directly from within MyPropose.ai.',
+    icon: '🔗',
   },
   {
-    question: 'What does the free trial include?',
-    answer: 'The free trial includes access to basic templates and tools for 14 days.',
-    icon: '🎁', // Example icon or image
+    question: 'Is my data secure?',
+    answer:
+      'Absolutely. We prioritize your privacy and security by using state-of-the-art encryption and data protection measures to safeguard your personal and professional information.',
+    icon: '🔒',
+  },
+  {
+    question: 'Can I customize the generated proposals?',
+    answer:
+      'Yes, every proposal is fully editable. You can personalize the content to match your unique voice and approach, ensuring that your proposal truly represents you.',
+    icon: '✍️',
+  },
+  {
+    question: 'Do you offer a free trial?',
+    answer:
+      'Yes, we provide a free trial that gives you access to essential features, allowing you to experience the benefits of our AI-driven proposal generation before committing.',
+    icon: '🎁',
+  },
+  {
+    question: 'What makes MyPropose.ai different?',
+    answer:
+      'We uniquely combine AI-powered insights, real-time client history analysis, and customizable templates to generate proposals that are both data-driven and highly personalized.',
+    icon: '⭐',
+  },
+  // {
+  //   question: 'Can I collaborate with my team?',
+  //   answer:
+  //     'Yes, MyPropose.ai supports team collaboration, so you can work with colleagues to refine proposals and share insights for better results.',
+  //   icon: '🤝',
+  // },
+  {
+    question: 'What if I need further assistance?',
+    answer:
+      'Our dedicated support team is always available to help. You can contact us via our support page or email for any questions or technical assistance.',
+    icon: '❓',
   },
 ];
 

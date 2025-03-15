@@ -1,68 +1,145 @@
+// src/home_component/Hero.jsx
 import React from 'react';
+import { TiCreditCard, TiFlash, TiHeadphones } from 'react-icons/ti';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20">
-      <div className="container mx-auto px-6">
-        {/* Upper Content Section */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8">
-          {/* Left Content */}
-          <div className="text-center md:text-left flex-1">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-              Transform the Way You Write Proposals with AI-Powered Personalization
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mt-4">
-              Stand out with tailored, human-like proposals that get results.
-            </p>
-            {/* Buttons */}
-            <div className="mt-6 flex justify-center md:justify-start gap-4">
-              <button className="bg-orange-500 text-white font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition">
-                Sign in
-              </button>
-              <button className="bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">
-                Learn More
-              </button>
-            </div>
+    <section
+      className="bg-[#13544e] text-white py-12" 
+      style={{ fontFamily: 'Roboto, sans-serif' }}
+    >
+      <div
+        className="
+          max-w-screen-xl
+          mx-auto
+          px-6 md:px-10 lg:px-0
+          flex flex-col-reverse lg:flex-row
+          items-center
+          lg:justify-between
+          gap-8 lg:gap-16
+        "
+      >
+        {/* LEFT COLUMN */}
+        <div
+          className="
+            w-full
+            lg:w-1/2
+            mt-0       /* Remove extra margin-top */
+            pl-6 md:pl-10 lg:pl-20
+          "
+        >
+          {/* Main Heading */}
+          <h1
+            className="
+              text-[2rem]
+              md:text-[2.5rem]
+              lg:text-[44px]
+              font-medium
+              leading-tight
+              mb-3
+            "
+            style={{ color: '#FFFFFF' }}
+          >
+            My Propose AI Upwork
+          </h1>
+
+          {/* Subheading with wavy underline */}
+          <div className="relative mb-6">
+            <h2
+              className="
+                text-[17px]
+                font-medium
+                leading-tight
+                pr-2
+              "
+            >
+              {/* AI Proposal Generator, lead scoring, analytics for upwork. */}
+              AI Proposal Creation, lead scoring,  analytics for upwork.
+            </h2>
+            <svg
+  className="absolute left-0 bottom-[-4px] w-full h-[12px]"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 150"
+  preserveAspectRatio="none"
+>
+  <path
+    d="M0 140 Q150 100, 300 130 T250 110"
+    stroke="#0F935B"
+    strokeWidth="60"
+    fill="none"
+  />
+</svg>
+
+            {/* <svg
+              className="absolute left-1/2 bottom-[-53%] w-[106%] h-full transform -translate-x-1/2 overflow-visible"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M1.65186 148.981C1.65186 148.981 73.8781 98.5943 206.859 93.0135C339.841 87.4327 489.874 134.065 489.874 134.065"
+                stroke="white"
+                strokeWidth="35"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg> */}
           </div>
 
-          {/* Right Image */}
-          <div className="flex-1">
-            <img
-              src="https://picsum.photos/400/300?random=1"
-              alt="Upper Section Graphic"
-              className="rounded-lg shadow-lg w-full max-w-md mx-auto"
-            />
+          {/* Paragraph */}
+          <p className="text-base lg:text-lg mb-8 leading-relaxed">
+
+
+            An AI-powered tool that transforms your Upwork proposal process. 
+            MyProspose.ai leverages your professional details, skills, 
+            project history, and client insights to craft personalized, 
+            winning proposals. Our solution helps freelancers stand out 
+            and win more projects on Upwork
+          </p>
+
+          {/* CTA Buttons (same width) */}
+          <div className="flex flex-wrap items-center gap-4 mb-6">
+            <button className="bg-white text-[#13544e] font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition-colors min-w-[180px]">
+              Get free account
+            </button>
+            <a 
+    href="https://youtu.be/3x2YY7apzRk?si=oyLfFfGPu891pXjb" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button 
+      className="border border-white text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-white hover:text-[#13544e] transition-colors min-w-[180px]"
+    >
+      Watch demo (2min)
+    </button>
+  </a>
+          </div>
+
+          {/* Icons Row */}
+          <div className="flex flex-wrap items-center gap-6 text-sm">
+            <div className="flex items-center gap-2">
+              <TiCreditCard className="text-[#0F935B] text-2xl" />
+              <span>No card required</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <TiFlash className="text-[#0F935B] text-2xl" />
+              <span>Quick set-up</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <TiHeadphones className="text-[#0F935B] text-2xl" />
+              <span>Best customer care</span>
+            </div>
           </div>
         </div>
 
-        {/* Lower Content Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between mt-16 gap-10">
-          {/* Left Content */}
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-              Power Up Your Proposal Success with MyPropose.ai
-            </h2>
-            <p className="text-lg text-gray-600 mt-4">
-              Leverage AI to create proposals that impress and win.
-            </p>
-            <ul className="list-disc list-inside text-gray-600 mt-6 space-y-2">
-              <li>Upwork API Integration</li>
-              <li>Portfolio Matching</li>
-              <li>Human-Like Proposal Generation</li>
-              <li>Client Analysis Tool</li>
-              <li>Automated Scheduling</li>
-              <li>Instant Feedback on Proposals</li>
-            </ul>
-          </div>
-
-          {/* Right Image */}
-          <div className="flex-1">
-            <img
-              src="https://picsum.photos/400/300?random=2"
-              alt="Lower Section Graphic"
-              className="rounded-lg shadow-lg w-full max-w-md mx-auto"
-            />
-          </div>
+        {/* RIGHT COLUMN */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <img
+            src="https://upwex.io/wp-content/uploads/2024/06/upwex-aitools-for-upwork-home.svg"
+            alt="Upwex AI Tools for Upwork"
+            className="w-full"
+          />
         </div>
       </div>
     </section>

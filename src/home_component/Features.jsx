@@ -1,10 +1,37 @@
 import React from 'react';
 
+// const features = [
+//   { title: 'Real-time Collaboration', description: 'Work with your team on proposals in real-time.', icon: '🤝' },
+//   { title: 'AI Templates', description: 'Get started with smart templates powered by AI.', icon: '📄' },
+//   { title: 'Automated Scheduling', description: 'Quickly schedule meetings with built-in tools.', icon: '📅' },
+//   { title: 'Instant Feedback', description: 'Receive instant suggestions to improve your proposals.', icon: '💡' },
+// ];
+
 const features = [
-  { title: 'Real-time Collaboration', description: 'Work with your team on proposals in real-time.', icon: '🤝' },
-  { title: 'AI Templates', description: 'Get started with smart templates powered by AI.', icon: '📄' },
-  { title: 'Automated Scheduling', description: 'Quickly schedule meetings with built-in tools.', icon: '📅' },
-  { title: 'Instant Feedback', description: 'Receive instant suggestions to improve your proposals.', icon: '💡' },
+  {
+    title: 'Intelligent Proposal Generator',
+    description:
+      'Automatically craft persuasive proposals using your profile details, skills, and project history.',
+    icon: '🤖',
+  },
+  {
+    title: 'Profile-Driven Insights',
+    description:
+      'Leverage your expertise and portfolio to tailor proposals that truly resonate with clients.',
+    icon: '📝',
+  },
+  {
+    title: 'Client History Analysis',
+    description:
+      'Analyze past client interactions and feedback to adjust your proposal strategy for higher success rates.',
+    icon: '📊',
+  },
+  {
+    title: 'Dynamic Content Customization',
+    description:
+      'Utilize AI-powered suggestions to refine and personalize proposal content for maximum impact.',
+    icon: '✍️',
+  },
 ];
 
 const Features = () => {

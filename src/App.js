@@ -2,8 +2,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import AppRoutes from "./routest/AppRoutes";
-import Header from "./components/Header";
+import DashboardHeader from "./components/DashboardHeader";
 import Footer from "./components/Footer";
+
+
 
 const App = () => (
   <Router>
@@ -16,10 +18,20 @@ const AppContent = () => {
 
   // Check if the current route is the home page ("/")
   const isHomePage = location.pathname === "/";
+  const isLogin = location.pathname === "/login";
+  const isSignup = location.pathname === "/signup";
+
+  // Define routes where Header and Footer should NOT appear
+  const noHeaderFooterRoutes = ["/", "/login", "/signup", '/magic-link', '/verify-code', '/contact-us', '/about-us'];
+  
+  // Check if the current route matches any in the noHeaderFooterRoutes array
+  const hideHeaderFooter = noHeaderFooterRoutes.includes(location.pathname);
+
+
 
   return (
     <div className="flex flex-col min-h-screen">
-      {!isHomePage && <Header />} {/* Only render Header if not on home page */}
+      {!hideHeaderFooter  && <DashboardHeader />} {/* Only render Header if not on home page */}
       <main className="flex-grow">
         <AppRoutes />
       </main>

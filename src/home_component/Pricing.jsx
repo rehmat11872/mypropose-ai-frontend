@@ -49,7 +49,8 @@ const plans = [
       'Unlimited users',
     ],
     buttonText: 'Choose Plan',
-    bgColor: 'bg-orange-500',
+    // Changed from orange to your green
+    bgColor: 'bg-[#13544e]',
     textColor: 'text-white',
   },
 ];
@@ -96,12 +97,12 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                {/* Button */}
+                {/* Button: conditionally styled based on bgColor */}
                 <button
                   className={`${
-                    plan.bgColor === 'bg-orange-500'
-                      ? 'bg-white text-orange-500'
-                      : 'bg-orange-500 text-white'
+                    plan.bgColor === 'bg-white'
+                      ? 'bg-[#13544e] text-white'
+                      : 'bg-white text-[#13544e]'
                   } mt-6 px-6 py-3 rounded-lg font-bold hover:opacity-90`}
                 >
                   {plan.buttonText}

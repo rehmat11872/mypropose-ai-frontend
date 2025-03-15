@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from '../home_component/Header';
+import Footer from '../home_component/Footer'
 
 export default function ContactUs() {
   return (
+    <div>
+            {/* Header */}
+            <Header />
+    
     <div className="min-h-screen bg-slate-50 text-[#0e141b] font-sans flex flex-col items-center">
       <div className="w-full max-w-5xl p-6 flex flex-col items-center">
         {/* Page Header */}
@@ -91,6 +97,9 @@ export default function ContactUs() {
           </div>
         </section>
       </div>
+    </div>
+         {/* Footer */}
+         <Footer />
     </div>
   );
 }

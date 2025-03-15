@@ -1,8 +1,17 @@
 import React from 'react';
+import Header from '../home_component/Header';
+import Footer from '../home_component/Footer'
+import { div } from 'framer-motion/client';
 
 export default function AboutUs() {
   return (
+    <div>
+  {/* Header */}
+  <Header />
+   
+            
     <div className="min-h-screen bg-slate-50 text-[#0e141b] font-sans flex flex-col items-center">
+
       <div className="w-full max-w-5xl p-6 flex flex-col items-center">
         {/* Page Header */}
         <h1 className="text-4xl font-bold leading-tight text-center mb-6">
@@ -81,5 +90,9 @@ export default function AboutUs() {
         </section>
       </div>
     </div>
+        {/* Footer */}
+        <Footer />
+    </div>
+
   );
 }
